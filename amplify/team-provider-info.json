@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gramit-dev-105857-authRole",
+      "UnauthRoleArn": "arn:aws:iam::350504855765:role/amplify-gramit-dev-105857-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::350504855765:role/amplify-gramit-dev-105857-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-gramit-dev-105857-deployment",
+      "UnauthRoleName": "amplify-gramit-dev-105857-unauthRole",
+      "StackName": "amplify-gramit-dev-105857",
+      "StackId": "arn:aws:cloudformation:us-east-2:350504855765:stack/amplify-gramit-dev-105857/744723e0-6632-11ec-a2bd-06c5d7a4fc54",
+      "AmplifyAppId": "d2w70yhyoth0a2"
+    }
+  }
+}
