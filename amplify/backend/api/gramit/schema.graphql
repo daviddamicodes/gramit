@@ -1,0 +1,40 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY {
+  globalAuthRule: AuthRule = { allow: public }
+} # FOR TESTING ONLY!
+type Post
+  @model
+  @auth(
+    rules: [
+      # owner can perform every actions on their own posts
+      { allow: owner }
+      # other signed in users can only read everyones posts
+      { allow: private, operations: [read] }
+      # non signed in users (guests) can read everyones posts
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  title: String!
+  contents: String!
+  image: String
+  upvotes: Int!
+  downvotes: Int!
+  comments: [Comment] @hasMany
+}
+
+type Comment
+  @model
+  @auth(
+    rules: [
+      { allow: owner }
+      { allow: private, operations: [read] }
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  postID: ID! @index(name: "byPost", sortKeyFields: ["content"])
+  post: Post @belongsTo(fields: ["postID"])
+  content: String!
+}

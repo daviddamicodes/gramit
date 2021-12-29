@@ -10,6 +10,11 @@
       "StackName": "amplify-gramit-dev-105857",
       "StackId": "arn:aws:cloudformation:us-east-2:350504855765:stack/amplify-gramit-dev-105857/744723e0-6632-11ec-a2bd-06c5d7a4fc54",
       "AmplifyAppId": "d2w70yhyoth0a2"
+    },
+    "categories": {
+      "auth": {
+        "gramit7cb7cbca": {}
+      }
     }
   }
 }

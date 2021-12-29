@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "gramit",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authgramit7cb7cbca",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

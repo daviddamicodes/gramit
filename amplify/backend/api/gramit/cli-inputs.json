@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "gramit",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\DAVID\\Desktop\\gramit\\amplify\\backend\\api\\gramit\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2022-12-26T10:48:32.423Z",
+      "keyDescription": "Gramit API Key"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authgramit7cb7cbca"
+      }
+    ]
+  }
+}
